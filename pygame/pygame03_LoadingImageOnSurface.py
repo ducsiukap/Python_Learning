@@ -9,7 +9,7 @@ screen.fill(color)
 pygame.display.update()
 
 pygame.display.set_caption('vduczz\'s game') 
-icon = pygame.image.load('icon.png')
+icon = pygame.image.load('pygame/icon.png')
 pygame.display.set_icon(icon)
 
 ''' 1280x720 screen:
@@ -21,7 +21,7 @@ pygame.display.set_icon(icon)
     | 
     y (0, 720) 
 '''
-carImg = pygame.image.load('car.png')
+carImg = pygame.image.load('pygame/car.png')
 # 64px img -> 64x64 pixels
 x, y = 608, 720 - 64
 def car():

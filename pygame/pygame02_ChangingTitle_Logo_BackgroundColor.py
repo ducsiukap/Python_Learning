@@ -16,7 +16,7 @@ pygame.display.update() # refresh entire display to show any changes
 pygame.display.set_caption('vduczz\'s game') # 
 
 # change the pygame window icon
-icon = pygame.image.load('icon.png')  # load image from a file into a surface object (icon)
+icon = pygame.image.load('pygame/icon.png')  # load image from a file into a surface object (icon)
 pygame.display.set_icon(icon)
 
 

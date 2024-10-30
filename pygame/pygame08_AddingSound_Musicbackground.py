@@ -39,7 +39,7 @@ mixer.music.play(-1) # play(-1) -> replay after end
 
 # load a sound
 # syntax: sound_name = mixer.play()
-shoot_effect_sound = mixer.Sound('pygame/shoot.mp3')
+shoot_effect_sound = mixer.Sound('pygame/piuuu.mp3')
 # stop(), set_volume(), fadeout(), get_length()
 shoot_effect_sound.set_volume(0.06)
 shooting = False
@@ -61,7 +61,7 @@ while True:
             if event.key == pygame.K_SPACE:
                 shooting = False
     if shooting and current_time - last_shot_time > 200:
-        shoot_effect_sound.play() 
+        shoot_effect_sound.play(maxtime=500)
         Bullets.append([338, 600])
         last_shot_time = current_time
 
@@ -71,7 +71,7 @@ while True:
         Bullet[1] += bullet_speed
         draw_bullet(Bullet)
         if Bullet[1] <= 144:
-            woo.play()
+            woo.play(maxtime=500)
             Bullets.remove(Bullet)
              
     screen.blit(alien, (318, 80))
